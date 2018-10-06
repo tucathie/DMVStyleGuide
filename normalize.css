@@ -21,7 +21,7 @@
    */
   
   body {
-    margin: 0;
+    margin: 0px;
   }
   
   /**
@@ -67,6 +67,33 @@ p {
     font-family: "Helvetica Neue";
     font-size: 16px;
 }
+
+.sidebar-container {
+  background-color: white;
+  height: 100%;
+  align: center;
+  position: fixed;
+  padding: 20px;
+  width: 120px;
+}
+
+.sidebar-logo {
+  width: 150px;
+}
+
+nav {
+  top: 0;
+}
+
+.section-container {
+  display: flex;
+  padding: 20px;
+  margin-left: 160px;
+  list-style: none;
+}
+
+
+
   /* Grouping content
      ========================================================================== */
   
