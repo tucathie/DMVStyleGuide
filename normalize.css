@@ -8,6 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -23,7 +24,7 @@
   body {
     margin: 0px;
   }
-  
+
   /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
@@ -77,12 +78,18 @@ p {
 }
 
 .sidebar-logo {
-  width: 150px;
+  width: 120px;
+  align-content: center;
 }
 
-nav {
-  top: 0;
+.responsive {
+  width: auto;
+  height: 100%;
 }
+
+  nav {
+    top: 0;
+  }
 
 .section-container {
   display: flex;
@@ -91,6 +98,50 @@ nav {
   list-style: none;
 }
 
+/* Sets row behavior using flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.row-container-no-wrap {
+  width: 100%;
+  display: flex;
+  /* === sets spacing between elements in container === */
+  justify-content: space-between;
+  flex-wrap: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.row-container {
+  width: 100%;
+  display: flex;
+  /* === sets spacing between elements in container === */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.row-container-around {
+  width: 100%;
+  display: flex;
+  /* === sets spacing between elements in container === */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.Color {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.svg-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 
   /* Grouping content
