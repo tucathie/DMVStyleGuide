@@ -36,6 +36,8 @@ h1 {
     font-size: 36px;
     text-transform: uppercase;
     margin: 0.67em 0;
+    background-color: #224C7F;
+    color: white;
   }
 
 h2 {
@@ -87,15 +89,31 @@ p {
   height: 100%;
 }
 
-  nav {
-    top: 0;
-  }
+.nav {
+  top: 0;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  /* === sets spacing between elements in container === */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
 .section-container {
   display: flex;
   padding: 20px;
   margin-left: 160px;
   list-style: none;
+}
+
+.content-container {
+  border: 2px;
+  border-color: black;
+
 }
 
 /* Sets row behavior using flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
@@ -254,16 +272,24 @@ p {
    * Remove the border on images inside links in IE 10.
    */
   
-  img {
+  .img {
     border-style: none;
   }
 
-  #circle {
+ .circle {
     width: 50px;
     height: 50px;
     border-radius: 25px;
+    padding: none;
   }
   
+  .icon {
+    width: 75px;
+  }
+
+  .footer {
+    background-color: #Cccccc;
+  }
   /* Forms
      ========================================================================== */
   
