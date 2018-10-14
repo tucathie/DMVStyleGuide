@@ -75,7 +75,7 @@ p {
   background-color: white;
   height: 100%;
   position: fixed;
-  padding: 20px;
+  padding: 0px;
   width: 120px;
 }
 
@@ -284,12 +284,43 @@ p {
   }
   
   .icon {
-    width: 75px;
+    width: 65px;
   }
 
   .footer {
     background-color: #Cccccc;
   }
+
+  .button-normal {
+    background-color: #1F93BF;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .button-hover {
+    background-color: #1F93BF;
+    color:white;
+    border-color: black;
+    font-weight:bolder;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .button-pressed {
+    background-color: lightblue;
+    color:white;
+    border-color: #1F93BF;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .button-disable {
+    background-color: #cccccc;
+    color:black;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+
   /* Forms
      ========================================================================== */
   
